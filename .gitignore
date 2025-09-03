@@ -1,0 +1,8 @@
+node_modules/
+.reporter
+.allure/
+.idea/
+.DS_Store
+.env
+screenshots/
+logs/

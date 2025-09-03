@@ -1,0 +1,28 @@
+{
+  "name": "fundix-mobile-e2e-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "E2E framework for Fundix mobile app",
+  "scripts": {
+    "doctor": "appium driver list --installed && adb devices",
+    "appium": "appium --base-path /",
+    "test": "wdio run ./wdio.conf.js",
+    "test:headed": "WDIO_LOG_LEVEL=info wdio run ./wdio.conf.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "clean": "rm -rf screenshots/* logs/*"
+  },
+  "devDependencies": {
+    "@wdio/appium-service": "^8.39.0",
+    "@wdio/cli": "^8.39.0",
+    "@wdio/local-runner": "^8.39.0",
+    "@wdio/mocha-framework": "^8.39.0",
+    "@wdio/spec-reporter": "^8.39.0",
+    "appium": "^3.0.1",
+    "appium-uiautomator2-driver": "^5.0.0",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "webdriverio": "^8.39.0"
+  }
+}
