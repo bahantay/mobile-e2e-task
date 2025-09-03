@@ -43,13 +43,7 @@ src/
 
 ## Configuration
 
-Update `src/config/capabilities.js` with your device details
-```javascript
-export const capabilities = {
-  'appium:deviceName': 'YOUR_DEVICE_NAME',
-  // ... other capabilities
-};
-```
+Update `wdio.conf.js` file under **capabilities** config with your device details
 
 Set environment variables:
 ```bash
